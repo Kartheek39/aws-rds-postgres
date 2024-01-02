@@ -52,7 +52,11 @@ def create_pagila_db():
         global conn
         with conn:
             with conn.cursor() as curs:
-                curs.execute(open("../sql-scripts/test.py", "r").read())
+                file = open("../sql-scripts/changed_file.txt","r")
+                content = file.readlines()
+                print(content)
+                file.close()
+                #curs.execute(open("../sql-scripts/test.py", "r").read())
                 #curs.execute(open("../sql-scripts/data.sql", "r").read())
                 conn.commit()
                 print('Pagila SQL scripts executed')
