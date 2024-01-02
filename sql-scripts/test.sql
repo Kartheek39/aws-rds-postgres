@@ -1,4 +1,4 @@
-create table person1 (
+create table kartheek1 (
     id int primary key,
     name varchar(50) not null,
     address1 varchar(50),
