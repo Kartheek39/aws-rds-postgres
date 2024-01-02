@@ -56,7 +56,7 @@ def create_pagila_db():
                 content = file.readline()
                 print(content)
                 file.close()
-                curs.execute(open(content, "r").read())
+                curs.execute(open(content.strip("\n", "r").read())
                 #curs.execute(open("../sql-scripts/data.sql", "r").read())
                 conn.commit()
                 print('Pagila SQL scripts executed')
