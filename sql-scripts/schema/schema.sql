@@ -1,6 +1,7 @@
-global conn
-        with conn:
-            with conn.cursor() as curs:
-                curs.execute(open("../sql-scripts/test1.sql", "r").read())
-                conn.commit()
-                print('Your selected file is executed')
+create table kartheek2 (
+    id int primary key,
+    name varchar(50) not null,
+    address1 varchar(50),
+    address2 varchar(50),
+    city varchar(30)
+)
