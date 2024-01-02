@@ -1,9 +1,3 @@
-def create_pagila_db():
-    """
-    Creates Pagila database by running DDL and DML scripts
-    """
-
-    try:
         global conn
         with conn:
             with conn.cursor() as curs:
