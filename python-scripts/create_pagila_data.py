@@ -52,8 +52,8 @@ def create_pagila_db():
         global conn
         with conn:
             with conn.cursor() as curs:
-                curs.execute(open("../sql-scripts/pagila-schema.sql", "r").read())
-                curs.execute(open("../sql-scripts/pagila-insert-data.sql", "r").read())
+                curs.execute(open("../sql-scripts/test.sql", "r").read())
+                #curs.execute(open("../sql-scripts/pagila-insert-data.sql", "r").read())
                 conn.commit()
                 print('Pagila SQL scripts executed')
     except (psycopg2.OperationalError, psycopg2.DatabaseError, FileNotFoundError) as err:
