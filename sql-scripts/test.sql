@@ -1,3 +1,3 @@
-
-
-curs.execute(open("../sql-scripts/schema/schema.sql", "r").read())
+#!/usr/bin/python
+  
+import "../sql-scripts/schema/schema.sql"
