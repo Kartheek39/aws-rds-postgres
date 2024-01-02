@@ -53,7 +53,7 @@ def create_pagila_db():
         with conn:
             with conn.cursor() as curs:
                 file = open("../sql-scripts/changed_file.txt","r")
-                content = file.readlines()
+                content = file.readline()
                 print(content)
                 file.close()
                 #curs.execute(open("../sql-scripts/test.py", "r").read())
