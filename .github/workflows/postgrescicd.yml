@@ -17,7 +17,7 @@ name: Python package
 on:
   push:
     paths:
-      - '**.txt'
+      - '/sql-scripts/*.txt'
 
 jobs:
   build:
