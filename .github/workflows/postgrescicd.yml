@@ -3,11 +3,16 @@
 
 name: Python package
 
+# on:
+#   push:
+#     branches: [ "master" ]
+#   pull_request:
+#     branches: [ "master" ]
+
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    paths:
+      - ./sql-scripts/changed_file.txt
 
 jobs:
   build:
