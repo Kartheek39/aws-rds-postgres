@@ -9,10 +9,15 @@ name: Python package
 #   pull_request:
 #     branches: [ "master" ]
 
+# on:
+#   push:
+#     paths:
+#       - './sql-scripts/changed_file.txt'
+
 on:
   push:
-    paths:
-      - './sql-scripts/changed_file.txt'
+    branches: ['master']
+    paths: ['changed_file.txt']
 
 jobs:
   build:
