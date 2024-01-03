@@ -1,1 +1,1 @@
-../sql-scripts/test1.sql
+../sql-scripts/schema/schema1.sql
