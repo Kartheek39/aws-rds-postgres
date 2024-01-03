@@ -31,7 +31,7 @@ jobs:
     - name: Deploy the postgres Scripts
       run: |
         pwd
-        #python3 ./create_pagila_data.py --instance master
+        python3 ./python-scripts/create_pagila_data.py --instance master
     # - name: Lint with flake8
     #   run: |
     #     # stop the build if there are Python syntax errors or undefined names
