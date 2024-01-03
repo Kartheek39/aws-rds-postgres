@@ -19,7 +19,7 @@ on:
     branches:
       - "**"
     paths: 
-      - 'README.md'
+      - '/sql-scripts/changed_file.txt'
 
 jobs:
   build:
