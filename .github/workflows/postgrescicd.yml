@@ -16,8 +16,8 @@ name: Python package
 
 on:
   push:
-    branches: ['master']
-    paths: ['changed_file.txt']
+    paths:
+      - '**.txt'
 
 jobs:
   build:
