@@ -14,10 +14,12 @@ name: Python package
 #     paths:
 #       - './sql-scripts/changed_file.txt'
 
-on:
+on:  
   push:
-    paths:
-      - '/sql-scripts/*.txt'
+    branches:
+      - "**"
+    paths: 
+      - 'README.md'
 
 jobs:
   build:
