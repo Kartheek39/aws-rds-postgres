@@ -12,7 +12,7 @@ name: Python package
 on:
   push:
     paths:
-      - ./sql-scripts/changed_file.txt
+      - './sql-scripts/changed_file.txt'
 
 jobs:
   build:
